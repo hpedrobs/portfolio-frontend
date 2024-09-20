@@ -34,6 +34,20 @@ jobs:
       working-directory: ./frontend
       run: npm run build
 
+    # Verificação dos arquivos HTML gerados no build
+    - name: Verify HTML files
+      working-directory: ./frontend/dist
+      run: |
+        if [ ! -f "index.html" ]; then
+          echo "Error: index.html not found!"
+          exit 1
+        fi
+        if [ ! -d "assets" ]; then
+          echo "Error: assets folder not found!"
+          exit 1
+        fi
+        echo "HTML and assets check passed!"
+
     - name: Upload do artefato
       uses: actions/upload-pages-artifact@v3
       with:
