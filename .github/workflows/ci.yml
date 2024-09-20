@@ -20,13 +20,19 @@ jobs:
         node-version: [20.17.0]
 
     steps:
-    
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
-      working-directory: ./frontend
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-      run: |
-          npm install
-          npm run build
+
+    - name: Install dependencies
+      working-directory: ./frontend
+      run: npm install
+
+    - name: Build project
+      working-directory: ./frontend
+      run: npm run build
