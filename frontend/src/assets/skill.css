@@ -1,0 +1,24 @@
+#skills .h2 {
+    margin-bottom: 2.5rem
+}
+
+.ul-lin-tec {
+    margin-left: 18px;
+}
+
+.list-skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-width: 525px;
+    margin: auto;
+}
+
+.resume-skills {
+    max-width: 525px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

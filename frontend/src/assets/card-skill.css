@@ -1,0 +1,17 @@
+.card-skill {
+    width: 165px;
+    height: 165px;
+    background-color: #003C3C;
+    padding: 1rem;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-skill .title {
+    color: #fff;
+    font-family: "Prompt";
+    font-weight: bold;
+    margin-bottom: 15px;
+}

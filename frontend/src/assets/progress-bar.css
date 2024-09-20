@@ -1,0 +1,35 @@
+.progress-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.horizontal-progress-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.horizontal-step {
+    width: 30px;
+    height: 20px;
+    background-color: #01D181;
+    opacity: 25%;
+    border-radius: 2px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.horizontal-step.filled {
+    background-color: #01D181;
+    opacity: 100%!important;
+    /* Cor que preenche os retângulos */
+}
+
+.progress-percentage {
+    font-size: 18px !important;
+    font-weight: bold;
+    text-align: right;
+    color: #fff;
+}

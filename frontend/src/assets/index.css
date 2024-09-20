@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #EBEBEB;
+}
+
+section {
+    margin-top: 50px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 68px;
+}
+
+.icon {
+    width: 40px;
+    margin: 1.5px;
+}
+
+.h2 {
+    font-family: 'Prompt';
+    font-size: 36px;
+    text-align: center;
+    color: #003C3C;
+}
+
+.h3 {
+    color: #161616;
+    font-size: 28px;
+    font-weight: bold;
+}

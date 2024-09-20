@@ -1,0 +1,59 @@
+/* Navbar */
+.navbar {
+    background-color: #81E7BC;
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 100px;
+}
+
+.color-bar-menu {
+    color: #003C3C;
+}
+
+/* Menu Dropdown */
+.menu-background {
+    background-color: #2C2C2C;
+}
+
+.menu-background a {
+    color: #81E7BC;
+    text-decoration: none;
+}
+
+/* Links */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Ajuste para telas grandes */
+@media (min-width: 1024px) {
+    /* Menu Dropdown */
+    .menu-background {
+        background-color: #81E7BC;
+    }
+
+    .menu-background a {
+        color: #003C3C;
+        text-decoration: none;
+    }
+}
+
+/* Button Evelope */
+a.a-envelope {
+    background-color: #003C3C;
+    border: 2px solid #003C3C;
+    color: #fff;
+    cursor: pointer;
+}
+
+a.a-envelope span {
+    margin-right: 5px;
+}
+
+a.a-envelope:hover {
+    text-decoration: none;
+}
