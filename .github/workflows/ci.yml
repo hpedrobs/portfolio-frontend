@@ -17,7 +17,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.17.0]
+        node-version: [20.17.x]
 
     steps:
     - name: Checkout repository
