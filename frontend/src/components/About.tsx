@@ -7,7 +7,7 @@ function About() {
             <div className="flex flex-col lg:flex-row justify-center items-center">
                 <div className="flex flex-col">
                     <h2 className="h2">Sobre Mim</h2>
-                    <img className="" src="/me-fundo-verde-com-circ.png" alt="Minha imagem circular" width="300px" height="300px" />
+                    <img className="" src="./me-fundo-verde-com-circ.png" alt="Minha imagem circular" width="300px" height="300px" />
                 </div>
 
                 <div className="content text-center">
