@@ -25,10 +25,10 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
 
-    # - name: Install dependencies
-    #   working-directory: ./frontend
-    #   run: npm install
+    - name: Install dependencies
+      working-directory: ./frontend
+      run: npm install
 
-    # - name: Build project
-    #   working-directory: ./frontend
-    #   run: npm run build
+    - name: Build project
+      working-directory: ./frontend
+      run: npm run build
