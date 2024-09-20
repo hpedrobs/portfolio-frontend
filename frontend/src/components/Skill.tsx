@@ -12,18 +12,18 @@ function Skill() {
                 </div>
 
                 <div className="list-skills">
-                    <CardSkill title={'HTML5'} progress={70} objectData="/icons/html.svg"/>
-                    <CardSkill title={'CSS3'} progress={70} objectData="/icons/css.svg"/>
-                    <CardSkill title={'JavaScript'} progress={80} objectData="/icons/js.svg"/>
-                    <CardSkill title={'Vue.js'} progress={70} objectData="/icons/vue.svg"/>
-                    <CardSkill title={'Node.js'} progress={70} objectData="/icons/node.svg"/>
-                    <CardSkill title={'Python'} progress={60} objectData="/icons/python.svg"/>
-                    <CardSkill title={'MongoDB'} progress={80} objectData="/icons/mongodb.svg"/>
-                    <CardSkill title={'TypeScript'} progress={70} objectData="/icons/ts.svg"/>
-                    <CardSkill title={'React'} progress={70} objectData="/icons/react.svg"/>
-                    <CardSkill title={'VS Code'} progress={90} objectData="/icons/vs.svg"/>
-                    <CardSkill title={'Figma'} progress={70} objectData="/icons/figma.svg"/>
-                    <CardSkill title={'PHP'} progress={60} objectData="/icons/php.svg"/>
+                    <CardSkill title={'HTML5'} progress={70} objectData="./icons/html.svg"/>
+                    <CardSkill title={'CSS3'} progress={70} objectData="./icons/css.svg"/>
+                    <CardSkill title={'JavaScript'} progress={80} objectData="./icons/js.svg"/>
+                    <CardSkill title={'Vue.js'} progress={70} objectData="./icons/vue.svg"/>
+                    <CardSkill title={'Node.js'} progress={70} objectData="./icons/node.svg"/>
+                    <CardSkill title={'Python'} progress={60} objectData="./icons/python.svg"/>
+                    <CardSkill title={'MongoDB'} progress={80} objectData="./icons/mongodb.svg"/>
+                    <CardSkill title={'TypeScript'} progress={70} objectData="./icons/ts.svg"/>
+                    <CardSkill title={'React'} progress={70} objectData="./icons/react.svg"/>
+                    <CardSkill title={'VS Code'} progress={90} objectData="./icons/vs.svg"/>
+                    <CardSkill title={'Figma'} progress={70} objectData="./icons/figma.svg"/>
+                    <CardSkill title={'PHP'} progress={60} objectData="./icons/php.svg"/>
                 </div>
             </div>
 
