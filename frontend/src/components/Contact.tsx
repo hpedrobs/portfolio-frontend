@@ -3,7 +3,7 @@ import FormContact from './FormContact'
 
 function Contact() {
     return (
-        <section id="contact">
+        <section className="" id="contact">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                 <div className="flex flex-col items-center lg:items-end">
                     <div className="text-center w-auto">

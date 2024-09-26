@@ -3,7 +3,7 @@ import '../assets/skill.css'
 
 function Skill() {
     return (
-        <section id="skills">
+        <section className="" id="skills">
             <h2 className="h2">Habilidades</h2>
 
             <div className="flex flex-col justify-center align-center">

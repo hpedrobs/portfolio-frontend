@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* No seu arquivo CSS ou tailwind.config.js */
+html {
+    scroll-behavior: smooth;
+}
+  
 body {
     background-color: #EBEBEB;
 }
@@ -29,4 +34,14 @@ section {
     color: #161616;
     font-size: 28px;
     font-weight: bold;
+}
+
+.invisible {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }

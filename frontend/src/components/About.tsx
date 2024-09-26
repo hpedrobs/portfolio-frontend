@@ -4,13 +4,10 @@ function About() {
     return (
         <section className="" id="about">
 
-            <div className="flex flex-col lg:flex-row justify-center items-center">
-                <div className="flex flex-col">
-                    <h2 className="h2">Sobre Mim</h2>
-                    <img className="" src="./me-fundo-verde-com-circ.png" alt="Minha imagem circular" width="300px" height="300px" />
-                </div>
+            <div className="flex flex-col jutify-center items-center mx-auto">
+                <h2 className="h2">Sobre Mim</h2>
 
-                <div className="content text-center">
+                <div className="content">
                     <p>
                         Olá! Sou o Pedro Henrique, tenho 22 anos e moro em Goiânia, Goiás.
                         É um prazer conhecê-lo!
