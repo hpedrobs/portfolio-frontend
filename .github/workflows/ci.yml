@@ -26,9 +26,9 @@ jobs:
       uses: actions/setup-node@v4
 
     - name: Install dependencies
-      working-directory: ./frontend
+      working-directory: ./
       run: npm install
 
     - name: Build project
-      working-directory: ./frontend
+      working-directory: ./
       run: npm run build
