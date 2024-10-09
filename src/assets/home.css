@@ -1,5 +1,5 @@
 #home {
-    background-image: linear-gradient(rgba(17, 26, 31, 0.8), rgba(17, 26, 31, 0.8)), url('constellations.jpg');
+    background-image: linear-gradient(rgba(17, 26, 31, 0.8), rgba(17, 26, 31, 0.8)), url('../constellations.jpg');
     background-size: cover; /* Faz a imagem cobrir toda a área */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
