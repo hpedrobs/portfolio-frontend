@@ -1,7 +1,26 @@
 import '../assets/contact.css'
 import FormContact from './FormContact'
+import { useState } from 'react'
 
 function Contact() {
+    const [selectedButton, setSelectedButton] = useState('Ecommerce')
+
+    const buttons = [
+        'Ecommerce',
+        'CRM',
+        'ERP',
+        'RPA',
+        'Sistema Web',
+        'Web Scraping',
+        'Portfólio',
+        'Blog',
+        'Landing Page',
+    ]
+    
+    const handleButtonClick = (button: string) => {
+        setSelectedButton(button) // Atualiza o estado com o botão clicado
+    }
+
     return (
         <section className="" id="contact">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -16,20 +35,20 @@ function Contact() {
                     </div>
 
                     <div className="grid-btns">
-                        <button className="btn-interests selected">Ecommerce</button>
-                        <button className="btn-interests">CRM</button>
-                        <button className="btn-interests">ERP</button>
-                        <button className="btn-interests">RPA</button>
-                        <button className="btn-interests">Sistema Web</button>
-                        <button className="btn-interests">Web Scraping</button>
-                        <button className="btn-interests">Portfólio</button>
-                        <button className="btn-interests">Blog</button>
-                        <button className="btn-interests">Landing Page</button>
+                        {buttons.map((button) => (
+                            <button
+                                key={button}
+                                className={`btn-interests ${selectedButton === button ? 'selected' : ''}`}
+                                onClick={() => handleButtonClick(button)}
+                            >
+                                {button}
+                            </button>
+                        ))}
                     </div>
                 </div>
 
                 <div className="flex justify-center lg:justify-start mx-3">
-                    <FormContact />
+                    <FormContact subject={selectedButton} />
                 </div>
             </div>
         </section>
