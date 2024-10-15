@@ -1,0 +1,65 @@
+name: Portfólio Frontend CD
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [20.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+
+    - name: Install dependencies
+      working-directory: ./
+      run: npm install
+
+    - name: Build project
+      working-directory: ./
+      run: npm run build
+
+    # Verificação dos arquivos HTML gerados no build
+    - name: Verify HTML files
+      working-directory: ./dist
+      run: |
+        if [ ! -f "index.html" ]; then
+          echo "Error: index.html not found!"
+          exit 1
+        fi
+        if [ ! -d "assets" ]; then
+          echo "Error: assets folder not found!"
+          exit 1
+        fi
+        echo "HTML and assets check passed!"
+
+    - name: Upload do artefato
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./dist
+
+  # Job de deploy
+  deploy:
+    environment:
+      name: github-pages
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
