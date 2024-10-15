@@ -28,13 +28,6 @@ const FormContact: React.FC<ContactProps> = ({ subject }) => {
         setLoading(true)
 
         try {
-            console.log(JSON.stringify({
-                name: formData.name,
-                email: formData.email,
-                message: formData.message,
-                subject
-            }))
-
             const response = await fetch(`${apiUrl}/messages/sendMessage`, {
                 method: 'POST',
                 body: JSON.stringify({
