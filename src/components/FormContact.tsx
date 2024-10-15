@@ -8,7 +8,7 @@ interface ContactProps {
 }
 
 const FormContact: React.FC<ContactProps> = ({ subject }) => {
-    const apiUrl = import.meta.env.VITE_API_URL ?? 'http://api.hpedrobs.com'
+    const apiUrl = import.meta.env.VITE_API_URL ?? 'https://api.hpedrobs.com'
 
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [titleModal, setTitleModal] = useState('')
