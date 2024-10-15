@@ -4,9 +4,6 @@
     background-color: #003C3C;
     padding: 1rem;
     border-radius: 2px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .card-skill .title {
