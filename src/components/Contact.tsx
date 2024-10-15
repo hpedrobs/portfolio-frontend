@@ -15,6 +15,7 @@ function Contact() {
         'Portfólio',
         'Blog',
         'Landing Page',
+        'Outros'
     ]
     
     const handleButtonClick = (button: string) => {
