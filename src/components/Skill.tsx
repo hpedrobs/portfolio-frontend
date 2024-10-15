@@ -8,7 +8,10 @@ function Skill() {
 
             <div className="flex flex-col justify-center align-center">
                 <div className="mb-10 resume-skills">
-                    <p>Tenho experiência em diversas linguagens e tecnologias, incluindo HTML, CSS (com SASS/SCSS), JavaScript, Vue.js, Node.js, Express.js, Python, MongoDB, TypeScript e Playwright. Sou especializado no uso de frameworks como Vue.js, Node.js e Express.js, além de trabalhar com banco de dados MongoDB e automação com Playwright.</p>
+                    <p>
+                        Sou programador com experiência no setor contábil, onde trabalhei como desenvolvedor de software em uma empresa de contabilidade. Tenho uma bagagem diversificada em HTML, CSS (SASS/SCSS), JavaScript, React, Vue.js, Node.js, Express.js, Python, MongoDB, TypeScript e Playwright.
+                        Meus principais focos são frameworks como React, Vue.js e Node.js, além da automação com Playwright. Essa vivência no ramo contábil me permite criar soluções práticas e eficientes que atendem às necessidades específicas dos clientes.
+                    </p>
                 </div>
 
                 <div className="list-skills">
