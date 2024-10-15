@@ -15,7 +15,9 @@ function Navbar() {
         <nav className="navbar p-2 lg:flex lg:items-center">
             <div className="flex fle-row justify-between content-center lg:block lg:flex-col">
                 {/* Logo */}
-                <img src="./logo.png" height="50" width="50"></img>
+                <a href="/">
+                    <img src="./logo.png" height="50" width="50"></img>
+                </a>
 
                 {/* Menu Button for Mobile */}
                 <button onClick={toggleMenu} className="block lg:hidden text-white">
