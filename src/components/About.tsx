@@ -9,10 +9,6 @@ function About() {
 
                 <div className="content">
                     <p>
-                        Olá! Sou o Pedro Henrique, tenho 22 anos e moro em Goiânia, Goiás.
-                        É um prazer conhecê-lo!
-                    </p>
-                    <p>
                         Em minha atuação como Desenvolvedor de Software por 4 anos na área
                         de Desenvolvimento Web e Desenvolvimento de Software Empresarial,
                         adquiri uma vasta gama de habilidades técnicas e uma sólida experiência
