@@ -9,7 +9,7 @@ function About() {
 
                 <div className="content">
                     <p>
-                        Em minha atuação como Desenvolvedor de Software por 4 anos na área
+                        Em minha atuação na área
                         de Desenvolvimento Web e Desenvolvimento de Software Empresarial,
                         adquiri uma vasta gama de habilidades técnicas e uma sólida experiência
                         prática em diversas tecnologias. Minha trajetória demonstra meu
