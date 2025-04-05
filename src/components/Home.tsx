@@ -2,7 +2,7 @@ import '../assets/home.css'
 
 function Home() {
     return (
-        <section className="container-full pt-5" id="home">
+        <section className="container-full pt-5 bg-[url('/background-image.jpg')] bg-cover bg-center" id="home">
             <div className="flex flex-col lg:flex-row justify-center items-center mx-auto">
                 <article className="navbar-text-js lg:mb-0 px-5 text-center lg:text-start">
                     <h2>Developer Full-Stack</h2>
@@ -10,7 +10,7 @@ function Home() {
                     <p>Sou desenvolvedor de software em Goiânia, Goiás, com 6 anos de experiência no desenvolvimento de soluções voltadas para a otimização de processos e inovação. Meu portfólio reflete o compromisso com a qualidade e a eficiência em cada projeto. Sinta-se à vontade para explorá-lo.</p>
                 </article>
 
-                <img src="./me.png" alt="Minha imagem ilustrada!" width={300} height={300}/>
+                <img src="./photo-portrait.png" alt="Minha imagem ilustrada!" width={300} height={300}/>
             </div>
         </section>
     )

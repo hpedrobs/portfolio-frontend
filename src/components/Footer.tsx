@@ -13,11 +13,8 @@ function Contact() {
                 </div>
 
                 <div className="text-center text-white">
-                    <div className="flex align-center justify-center">
-                        <h4 className="h4 mr-2">Projetado e construído por</h4>
-                        <img src="./logo.png" height="25" width="25"></img>
-                    </div>
-                    <h4 className="h4"><span>hpedrobs</span> 2024 © Todos direitos reservados</h4>
+                    <h4 className="h4 mr-2">Projetado e construído por:</h4>
+                    <h4 className="h4"><b>hpedrobs</b> 2024 © Todos direitos reservados</h4>
                 </div>
             </div>
         </footer>

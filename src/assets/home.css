@@ -1,8 +1,4 @@
 #home {
-    background-image: linear-gradient(rgba(17, 26, 31, 0.8), rgba(17, 26, 31, 0.8)), url('../constellations.jpg');
-    background-size: cover; /* Faz a imagem cobrir toda a área */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
     margin: 0;
     padding-top: 168px;
     padding-bottom: 100px;
@@ -14,17 +10,22 @@
 
 #home h2 {
     font-family: 'Raleway', serif;
-    color: #01D181;
-    font-style: 16px;
+    color: #fff;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
 }
+  
 
 #home h1 {
     font-family: 'Raleway', serif;
     font-size: 36px;
     font-weight: bold;
     color: #fff ;
+    text-shadow:
+        0 0 6px rgba(255, 255, 255, 0.8),
+        0 0 12px rgba(255, 255, 255, 0.6),
+        0 0 18px rgba(255, 255, 255, 0.4);
 }
 
 #home p {

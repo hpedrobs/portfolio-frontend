@@ -1,6 +1,5 @@
 /* Navbar */
 .navbar {
-    background-color: #81E7BC;
     font-size: 24px;
     font-weight: bold;
     position: fixed;
@@ -11,17 +10,18 @@
 }
 
 .color-bar-menu {
-    color: #003C3C;
+    color: #fff;
 }
 
 /* Menu Dropdown */
-.menu-background {
-    background-color: #2C2C2C;
-}
+/* .menu-background {
+    background-color: #fff;
+} */
 
 .menu-background a {
-    color: #81E7BC;
+    color: #fff;
     text-decoration: none;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
 }
 
 /* Links */
@@ -29,23 +29,10 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Ajuste para telas grandes */
-@media (min-width: 1024px) {
-    /* Menu Dropdown */
-    .menu-background {
-        background-color: #81E7BC;
-    }
-
-    .menu-background a {
-        color: #003C3C;
-        text-decoration: none;
-    }
-}
-
 /* Button Evelope */
 a.a-envelope {
-    background-color: #003C3C;
-    border: 2px solid #003C3C;
+    background-color: #2C2C2C;
+    border: 2px solid #2C2C2C;
     color: #fff;
     cursor: pointer;
 }

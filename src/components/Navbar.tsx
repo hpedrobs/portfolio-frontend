@@ -12,11 +12,12 @@ function Navbar() {
     }
 
     return (
-        <nav className="navbar p-2 lg:flex lg:items-center">
+        <nav className="navbar py-6 lg:py-3 px-6 lg:flex lg:items-center backdrop-blur">
             <div className="flex fle-row justify-between content-center lg:block lg:flex-col">
-                {/* Logo */}
-                <a href="/">
-                    <img src="./logo.png" height="50" width="50"></img>
+                {/* Button Contact */}
+                <a href="#contact" className="a-envelope flex items-center rounded p-3 drop-shadow">
+                    <span>Contato</span>
+                    <FaEnvelope className="size-6" />
                 </a>
 
                 {/* Menu Button for Mobile */}
@@ -26,8 +27,8 @@ function Navbar() {
             </div>
 
             {/* Dropdown Menu */}
-            <div className={`${isOpen ? "flex" : "hidden"} lg:flex flex-col lg:flex-row items-center lg:items-none w-full`}>
-                <ul className="lg:flex lg:space-x-6 text-center lg:mx-auto w-full lg:w-auto mb-3 lg:mb-0 rounded drop-shadow lg:drop-shadow-none menu-background">
+            <div className={`${isOpen ? "flex" : "hidden"} lg:flex flex-col lg:flex-row items-center lg:items-none w-full mt-5 lg:mt-0 lg:w-auto lg:ml-auto`}>
+                <ul className="lg:flex lg:space-x-6 text-center lg:mx-auto w-full lg:w-auto rounded drop-shadow lg:drop-shadow-none menu-background">
                     <li className="py-2 lg:py-0">
                         <a href="#home" className="block lg:inline drop-shadow" onClick={toggleMenu}>Página Principal</a>
                     </li>
@@ -41,12 +42,6 @@ function Navbar() {
                         <a href="#projects" className="block lg:inline drop-shadow" onClick={toggleMenu}>Projetos</a>
                     </li>
                 </ul>
-
-                {/* Button Contact */}
-                <a href="#contact" className="a-envelope flex items-center rounded p-3 drop-shadow">
-                    <span>Contato</span>
-                    <FaEnvelope className="size-6" />
-                </a>
             </div>
 
         </nav>
